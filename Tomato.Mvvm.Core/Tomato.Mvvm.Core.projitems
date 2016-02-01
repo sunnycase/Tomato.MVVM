@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>83e02c84-ec7a-4190-8b65-2aea9c6d310e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tomato.Mvvm</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExceptionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IFileDetermineService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IMessageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IOpenFileService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ISaveFileService.cs" />
+  </ItemGroup>
+</Project>
