@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E763A94-28A7-4DB1-9ED3-26DE5A41CC31}</ProjectGuid>
+    <ProjectGuid>{938AD2FC-80A8-408E-91A4-BB659A880D85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tomato.Mvvm.Xaml</RootNamespace>
-    <AssemblyName>Tomato.Mvvm.Xaml</AssemblyName>
+    <RootNamespace>Tomato.Threading</RootNamespace>
+    <AssemblyName>Tomato.Threading</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
@@ -107,22 +107,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Tomato.Mvvm.Xaml.Uwp.rd.xml" />
+    <EmbeddedResource Include="Properties\Tomato.Threading.Uwp.rd.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Behaviors\SelectorIsSelectedToSourceBindingBehavior.cs" />
-    <Compile Include="Controls\HamburgerMenu.cs" />
-  </ItemGroup>
-  <Import Project="..\Tomato.Mvvm.Xaml\Tomato.Mvvm.Xaml.projitems" Label="Shared" />
+  <Import Project="..\..\..\Tomato.Threading\Tomato.Threading\Tomato.Threading.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

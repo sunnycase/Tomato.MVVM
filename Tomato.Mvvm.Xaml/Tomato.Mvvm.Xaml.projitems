@@ -10,6 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)BindingHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\HamburgerMenuButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanNotConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\StringFormatConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeSpanToDoubleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeSpanToStringConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ValueConverterBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DependencyObjectExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskHelper.cs" />

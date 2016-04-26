@@ -16,4 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\OpenFileService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\SaveFileService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Themes\" />
+  </ItemGroup>
 </Project>

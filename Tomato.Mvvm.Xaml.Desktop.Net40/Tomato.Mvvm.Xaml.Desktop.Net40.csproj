@@ -75,6 +75,10 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Tomato.Mvvm.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tomato.Mvvm.Core.0.0.1-alpha2\lib\net40\Tomato.Mvvm.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -101,12 +105,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tomato.Mvvm.Core.Net40\Tomato.Mvvm.Core.Net40.csproj">
-      <Project>{f8c1f6c6-6f19-40c8-a999-56f71ff6fd3b}</Project>
-      <Name>Tomato.Mvvm.Core.Net40</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="..\Tomato.Mvvm.Xaml.Desktop\Tomato.Mvvm.Xaml.Desktop.projitems" Label="Shared" />
   <Import Project="..\Tomato.Mvvm.Xaml\Tomato.Mvvm.Xaml.projitems" Label="Shared" />

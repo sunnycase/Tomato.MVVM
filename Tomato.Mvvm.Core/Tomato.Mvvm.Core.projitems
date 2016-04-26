@@ -11,7 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)BindableBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExceptionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinqExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ObjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IFileDetermineService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IMessageService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IOpenFileService.cs" />
