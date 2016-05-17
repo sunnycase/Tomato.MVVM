@@ -8,8 +8,8 @@
     <ProjectGuid>{E1304D0B-24D1-4B9F-9C88-51D730BADA73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tomato.Mvvm.Caliburn.Net45</RootNamespace>
-    <AssemblyName>Tomato.Mvvm.Caliburn.Net45</AssemblyName>
+    <RootNamespace>Tomato.Mvvm.Caliburn</RootNamespace>
+    <AssemblyName>Tomato.Mvvm.Caliburn</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

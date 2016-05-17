@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomato.Mvvm.Caliburn.Net40"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomato.Mvvm.Caliburn.Net45", "Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn.Net45\Tomato.Mvvm.Caliburn.Net45.csproj", "{E1304D0B-24D1-4B9F-9C88-51D730BADA73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Tomato.Threading\Test\Test.csproj", "{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn.projitems*{e1304d0b-24d1-4b9f-9c88-51d730bada73}*SharedItemsImports = 4
@@ -61,6 +63,8 @@ Global
 		Tomato.Mvvm.Xaml\Tomato.Mvvm.Xaml.projitems*{b542cb16-9e5a-43cf-842b-ff4cd657d50f}*SharedItemsImports = 13
 		Tomato.Mvvm.Core\Tomato.Mvvm.Core.projitems*{83e02c84-ec7a-4190-8b65-2aea9c6d310e}*SharedItemsImports = 13
 		Tomato.Mvvm.Xaml\Tomato.Mvvm.Xaml.projitems*{5e763a94-28a7-4db1-9ed3-26de5a41cc31}*SharedItemsImports = 4
+		..\Tomato.Threading\Tomato.Threading\Tomato.Threading.projitems*{6dcb113c-961a-4eb9-ba80-aa86e73f6d68}*SharedItemsImports = 4
+		Tomato.Threading\Tomato.Threading.Desktop\Tomato.Threading.Desktop.projitems*{6dcb113c-961a-4eb9-ba80-aa86e73f6d68}*SharedItemsImports = 4
 		Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn.projitems*{5f1dbc63-37ba-409a-b294-04b34a6e952c}*SharedItemsImports = 4
 		Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn\Tomato.Mvvm.Caliburn.projitems*{77bdb939-370f-40a2-aedb-35b40bdb868f}*SharedItemsImports = 13
 	EndGlobalSection
@@ -235,6 +239,27 @@ Global
 		{E1304D0B-24D1-4B9F-9C88-51D730BADA73}.Release|x64.Build.0 = Release|Any CPU
 		{E1304D0B-24D1-4B9F-9C88-51D730BADA73}.Release|x86.ActiveCfg = Release|Any CPU
 		{E1304D0B-24D1-4B9F-9C88-51D730BADA73}.Release|x86.Build.0 = Release|Any CPU
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|Any CPU.Build.0 = Debug|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|ARM.Build.0 = Debug|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x64.ActiveCfg = Debug|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x64.Build.0 = Debug|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x64.Deploy.0 = Debug|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x86.ActiveCfg = Debug|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x86.Build.0 = Debug|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Debug|x86.Deploy.0 = Debug|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|Any CPU.ActiveCfg = Release|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|ARM.ActiveCfg = Release|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|ARM.Build.0 = Release|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|ARM.Deploy.0 = Release|ARM
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x64.ActiveCfg = Release|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x64.Build.0 = Release|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x64.Deploy.0 = Release|x64
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x86.ActiveCfg = Release|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x86.Build.0 = Release|x86
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -256,5 +281,6 @@ Global
 		{77BDB939-370F-40A2-AEDB-35B40BDB868F} = {5142F925-8C15-4F35-BF53-0F977F85F3D0}
 		{5F1DBC63-37BA-409A-B294-04B34A6E952C} = {5142F925-8C15-4F35-BF53-0F977F85F3D0}
 		{E1304D0B-24D1-4B9F-9C88-51D730BADA73} = {5142F925-8C15-4F35-BF53-0F977F85F3D0}
+		{8856B17C-7DE6-4BCE-9A69-89A91BE6E59D} = {D07F2AD8-0831-4F15-9B35-99D540DAA7EF}
 	EndGlobalSection
 EndGlobal

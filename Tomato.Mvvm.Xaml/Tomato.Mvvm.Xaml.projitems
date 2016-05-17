@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BindingHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\HamburgerMenuButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\BooleanNotConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\DummyConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\StringFormatConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeSpanToDoubleConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeSpanToStringConverter.cs" />
