@@ -1,11 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;net40;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
     <RootNamespace>Tomato.Mvvm</RootNamespace>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
-    <PackageReference Include="Microsoft.Bcl" Version="1.1.10"/>
-    <PackageReference Include="Microsoft.Bcl.Build" Version="1.0.21"/>
-  </ItemGroup>
 </Project>

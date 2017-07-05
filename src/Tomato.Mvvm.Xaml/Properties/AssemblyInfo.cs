@@ -2,6 +2,9 @@
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+#if !WINDOWS_UWP
+using System.Windows.Markup;
+#endif
 
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
@@ -35,3 +38,9 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
+
+#if !WINDOWS_UWP
+[assembly: XmlnsDefinition("http://schemas.sunnycase.moe/2008/xaml/presentation", "Tomato.Mvvm.Controls", AssemblyName = "Tomato.Mvvm.Xaml")]
+[assembly: XmlnsDefinition("http://schemas.sunnycase.moe/2008/xaml/presentation", "Tomato.Mvvm.Converters", AssemblyName = "Tomato.Mvvm.Xaml")]
+[assembly: XmlnsDefinition("http://schemas.sunnycase.moe/2008/xaml/presentation", "Tomato.Mvvm.Behaviors", AssemblyName = "Tomato.Mvvm.Xaml")]
+#endif
