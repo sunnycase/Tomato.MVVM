@@ -1,21 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;uap10.0</TargetFrameworks>
+    <TargetFrameworks>net40</TargetFrameworks>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'uap10.0'">
-    <TargetPlatformVersion>10.0.15063.0</TargetPlatformVersion>
-  </PropertyGroup>
-
-  <ItemGroup>
-    
+  <ItemGroup>    
     <Folder Include="Behaviors\" />
     <Folder Include="Platforms\" />
     <Compile Remove="Platforms\**\*.*" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="WindowsBase" />
@@ -25,23 +20,10 @@
     <Compile Include="Platforms\Desktop\**\*.cs" />
     <PackageReference Include="Expression.Blend.Sdk.WPF" Version="1.0.1" />
     <PackageReference Include="Ookii.Dialogs" Version="1.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-    <Compile Include="Platforms\UAP\**\*.cs" />
-    <Page Include="Platforms\UAP\Themes\Generic.xaml" Link="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.2.3" />
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed" Version="2.0.0" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0-net40" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Tomato.Mvvm.Core\Tomato.Mvvm.Core.csproj" />
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
-
-  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
 </Project>
