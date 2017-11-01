@@ -34,13 +34,13 @@
       <SubType>Designer</SubType>
     </Page>
     
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="5.2.3" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform " Version="6.0.1" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Tomato.Mvvm.Core\Tomato.Mvvm.Core.csproj" />
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.0.2" PrivateAssets="all" />
+    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.1.0" PrivateAssets="all" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />

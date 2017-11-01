@@ -37,13 +37,7 @@ namespace Tomato.Mvvm.Services
 
         public Task<bool> DetermineFile()
         {
-            return
-#if NET40
-                TaskEx
-#else
-                Task
-#endif
-                .FromResult(_saveFileDialog.ShowDialog() ?? false);
+            return Task.FromResult(_saveFileDialog.ShowDialog() ?? false);
         }
     }
 }
